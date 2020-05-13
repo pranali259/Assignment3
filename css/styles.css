@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-			
 	}
 
 body {
@@ -15,29 +14,18 @@ body {
   background-color: #f6b319;
   border-radius: 0;
   border: 0;
+  height: 60px;
 }
 
 .navbar-brand {
   padding-top: 25px;
 }
 
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Oxygen', sans-serif;
-  color: #557c3e;
-  font-size: 1.0em;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+.nav-list {
+  border: 2px solid black;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-#nav-list {
-  margin-top: 10px;
-}
-#nav-list a {
-  text-align: center;
+
+.navbar-brand h1 { /* brand name */
   font-family: 'Oxygen', sans-serif;
   color: #557c3e;
   font-size: 1.0em;
@@ -47,11 +35,26 @@ body {
   line-height: .75;
 }
 
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 1px;
+}
+#nav-list a {
+  text-align: center;
+}
 #nav-list a:hover {
   background: #E7E7E7;
 }
 #nav-list a span {
   font-size: 1.8em;
+}
+
+.padding1 {
+  background-color: #f6b319;
+  padding:10px 20px 10px 20px;
+  margin: 20px auto 20px auto;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -61,22 +64,41 @@ body {
   clear: both;
   margin-top: -30px;
 }
-
-.ShowRight{
-			
-			text-align: center;
-			padding:4px 5px 4px 5px;
-			font-weight: bold;
-			font-size: 1.25em;
-			margin: -1px -1px;
-		}
-h1 {	
-			text-align: center;
-			margin-bottom: 15px;
-			font-size: 1.75em;
-		}
-.Container{
-	align: center;
-}
 /* END HEADER */
 
+@media (max-width: 767px) {
+  #collapsable-nav a { 
+    font-size: 1.2em;
+	font-family: 'Oxygen', sans-serif;
+	color: #557c3e;
+	text-shadow: 1px 1px 1px #222;
+    background-color: lightgoldenrodyellow;
+  }
+  #collapsable-nav a span { 
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .container {
+    margin-top: 10px;
+    padding: 0;
+  }
+  h2.text-center {
+    margin-top:10px ;
+	}
+	
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  #nav-list a {
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+    
+  
+}
